@@ -1,0 +1,62 @@
+@import 'variable';
+
+@import 'mixin';
+
+   .content-wrapper{
+    @include margin(25px,0px,0px,0px);
+    .content.text-center{
+        @include padding(90px,0px,160px,0px);
+        h5.content-heading{
+            font-size: 40px;
+        }
+        p.content-text{
+            @include padding(0px,100px,0px,100px);
+            color: #5f5656;
+        }
+    }
+    .col-sm-12.inner-part{
+        background-color: $background-color;
+    }
+    .inner-wrapper.text-center{
+        @include margin(-120px,0,0,0);
+        @include padding(35px,0px,50px,0px);
+        background-color: #fff;
+        border: 3px solid #f2f2f2;
+        border-radius: 2px 2px 2px 2px;
+
+        .logo-image{
+            @include size(50%,null);
+        }
+        h2.inner-heading{
+            font-size: 25px;
+            font-weight: bold;
+        }
+    }
+}
+button.contact-button{
+    @include button-1;
+}
+.portfolio-heading {
+    margin: 0;
+    font-size: 55px;
+    line-height: 63px;
+    font-weight: bold;
+}
+p.portfolio-text {
+    font-size: 20px;
+    line-height: 25px;
+    color: #bdb7b7;
+}
+button.quote{
+    @include button-2;
+    @include padding(10px,20px,10px,20px);
+}
+.review.text-center{
+    @include padding(60px,130px,40px,130px);
+}
+.details{
+    @include padding(119px,90px,100px,60px);
+}
+img.img-fluid.stara{
+    @include size(50%,null);
+}
