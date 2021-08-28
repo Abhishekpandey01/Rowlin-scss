@@ -1,40 +1,93 @@
-@media (max-width: 575px){
-    p.content-text {
-        padding: 0px !important;
-        color: #5f5656;
+@media (max-width: 767px){
+    header {
+        position: relative;
+        background-color: #4B4A47;
     }
-    .content.text-center {
-        padding-top: 20px !important;
-        padding-bottom: 20px !important;
+    a.nav-link {
+        font-size: 18px !important;
+        margin: 0px !important;
     }
-    section.content-wrapper {
-        margin-top: 0px !important;
+    .banner-wrapper .banner-image .banner-content .logo-title {
+        letter-spacing: 0px;
+        font-size: 19px;  
     }
-    .inner-wrapper.text-center {
-        margin:6px !important;
+    .banner-wrapper .banner-image .banner-content .main-logo {
+        width: 70%;
     }
-    .portfolio-heading {
-        font-size: 35px !important;
-        line-height: 45px !important;
-       
-    } 
-    p.portfolio-text {
-        font-size: 15px !important;
+    .cloudolive-msps {
+        padding: 37px 0px 37px 0px;
     }
-    button.quote {
-        width: auto;
+
+    /* responsive cloudolivemsps */
+
+    .video-image {
+        position: relative;
+        margin-top: 20px;
     }
-    img.img-fluid.image-portfolio {
-        height: auto !important;
-        width: auto !important;
+    .Demo-section-button {
+        text-align: center;
     }
-    .review.text-center {
-        padding:0px !important;
-    }                                                                                        
-    .stara {
-        width: auto;
+    .cloudolive-msps .msps-heading {
+        font-size: 25px;
+        text-align: center;
     }
-    .details {
-        padding: 1px !important;
+    video {
+        width: 100%;
     }
+    .cloudolive-msps .msps-text {
+        font-size: 18px;
+        text-align: center;
+    }
+    .cloudolive-msps .video-logo.text-center {
+       bottom:0;
+        left: 0;
+        transform: translateY(-157px);
+    }
+    .cloudolive-msps i.fa.fa-play {
+        font-size: 30px;
+    }
+    /* responsive power section */
+    .cloudolive-power .cloudolive-power-heading {
+        font-size: 25px;
+        font-weight: 800;
+        color: #4B4A49;
+    }
+    .powe-image {
+        width: 100%;
+    }
+    .cloudolive-power .solution-image .power-button {
+        position: relative;
+        bottom: 0;
+        right: 0;
+    }
+    .cloudolive-power .solution-image .msps-button {
+        background: #96BEDC;
+        padding: 10px;
+        font-size: 22px;
+        margin: 10px 0px;
+    }
+    /* story styles */
+    section.our.story{
+    padding: 40px 0px 20px 0px;
+    }
+    .story-image-one {
+        text-align: center;
+    }
+    .story-image-two {
+        text-align: center;
+    }
+    section.our.story .story-images .story-image-two {
+        position: relative;
+        margin-top: 10px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+         transform: translateY(0);
+    }
+    section.our.story .story-images img.owner-image {
+        width: 270px;
+        height: 270px;
+        border-radius: 100%;
+    }
+
 }

@@ -2,61 +2,417 @@
 
 @import 'mixin';
 
-   .content-wrapper{
-    @include margin(25px,0px,0px,0px);
-    .content.text-center{
-        @include padding(90px,0px,160px,0px);
-        h5.content-heading{
-            font-size: 40px;
-        }
-        p.content-text{
-            @include padding(0px,100px,0px,100px);
-            color: #5f5656;
-        }
-    }
-    .col-sm-12.inner-part{
-        background-color: $background-color;
-    }
-    .inner-wrapper.text-center{
-        @include margin(-120px,0,0,0);
-        @include padding(35px,0px,50px,0px);
-        background-color: #fff;
-        border: 3px solid #f2f2f2;
-        border-radius: 2px 2px 2px 2px;
+// style for header
 
-        .logo-image{
-            @include size(50%,null);
+// .header-banner{
+//     background-image: url(/assets/images/image-000.jpg);
+//     background-size: cover;
+//     background-repeat: no-repeat;
+// }
+
+body{
+    background-color: #4B4A47;
+}
+
+header{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 99;
+        padding: 0px 20px;
+    
+    .navbar-light .navbar-nav .nav-link {
+        color: $white-color;
+    }
+    a.nav-link {
+        margin-left: 34px;
+        font-size: 25px;
+    }
+}
+
+// Style for banner
+// section.banner {
+//     padding: 80px 0px 170px 0px;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     img.main-logo {
+//         width: 100%;
+//     }
+//     h1.text-white.logo-title {
+//         font-size: $logo-title;
+//         line-height: 0.3;
+//     }
+   
+// }
+
+.banner-wrapper{
+    position: relative;
+    .banner-image{
+        position: relative;
+        .home-banner{
+            width: 100%;
         }
-        h2.inner-heading{
-            font-size: 25px;
-            font-weight: bold;
+        .banner-content{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            z-index: 99;
+            transform: translateY(-50%);
+            .main-logo {
+                width: 67%;
+            }
+            .logo-title{
+                letter-spacing: 4px;
+            }
+        }
+        
+    }
+}
+
+
+
+
+
+// style for demo section
+
+.cloudolive-msps{
+    background-color: $bg-color;
+    padding: 90px 0px 90px 0px;
+    .msps-heading{
+        color: $naveyblue-color;
+        font-size: $font-size;
+    }
+    .msps-text {
+        font-size: 22px;
+        color: #fff;
+    }
+    .msps-button{
+        @include button-1;
+    }
+    .video-img {
+     position: relative;
+    }
+    .video-logo.text-center {
+        width: 27%;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        left: 35px;
+        transform: translateY(-220px);
+        background: #000;
+        opacity: 0.5;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    i.fa.fa-play {
+        font-size: 60px;
+        color: #fff;
+    }
+    .video-title {
+        font-size: 25px;
+    }
+}
+
+// Style for solution section
+
+// section.solution {
+//     background-color: $bg-naveyblue;
+//     padding: 80px 0px 80px 0px;
+//     h1.solution-heading {
+//         font-size: $font-size;
+//         font-weight: $font-weight;
+//         color: $black-color;
+//     }
+//     .icon {
+//         width: 50%;
+//         height: 100px;
+//         margin: 0 auto;
+//     }
+//     .icons {
+//        width: 70%;
+//     }
+
+//     .inner-heading {
+//         min-height: 50px;
+//     }
+//     h4.icon-heading {
+//         font-size: $icon-heading;
+//         color: $black-color;
+//         font-weight: 700;
+//     }
+//     .icon-text.text-white {
+//         font-size: 18px;
+//     }
+// }
+
+
+// style for power of cloudolive
+.cloudolive-power {
+    background: $bg-grey;
+    .cloudolive-power-heading{
+        font-size: $font-size;
+        font-weight: $font-weight;
+        color: $black-color;
+    }
+    
+    img.img-fluid.icon-one {
+         width: 50%;
+    }
+    .solution-image {
+        position: relative;
+        .msps-button{
+            @include button-2;
+        }
+        .power-button {
+            position: absolute;
+            bottom: 4%;
+            right: -25%;
+        }
+    }
+    
+    h1.content-heading {
+        font-size: 25px;
+        font-weight: $font-weight;
+        color:$black-color;
+    }
+}
+
+// style for client section
+   section.clients {
+    padding: 40px 0px 40px 0px;
+    background-color: #fff;
+      .client-heading{
+       font-size: $font-size;
+       font-weight: $font-weight;
+       color: $naveyblue-color;
+}
+h5.client-subheading {
+    font-size: 23px;
+}
+img.client-logo-image6 {
+    width: 50%;
+}
+img.client-logo-image4 {
+    width: 100%;
+}
+
+}
+
+// Style for testimonial
+
+section.testimonial {
+    background: $bg-naveyblue;
+    padding: 20px 0px 50px 0px;
+    h1.heading-testimonial {
+        font-size: 23px;
+        font-weight: 700;
+        color: #fff;
+    }
+}
+h1.text-white.testimonial-content {
+    font-size: 20px;
+}
+
+.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+}
+.carousel-indicators {
+    bottom: -40%;
+}
+
+
+// solution
+
+section.solution {
+    padding: 80px 0px 80px 0px;
+    background: #97BFDC;
+    .icons {
+        width: 50%;
+        vertical-align: middle;
+        margin: 0 auto;
+        min-height: 170px;
+    }
+    .solution-heading {
+        font-size: 38px;
+        font-weight: 800;
+        margin-bottom: 60px;
+        color: #4B4A47;
+    }
+    h1.icon-heading.text-center {
+        font-size: 19px;
+        color: #4B4A47;
+        margin-top: 30px;
+        font-weight: 700;
+    }
+    p.text-white.icon-text {
+        margin-top: 30px;
+    }
+    p.text-white.para {
+        font-size: 18px;
+    }
+}
+
+// Quotation
+
+section.quotation {
+    margin-top: 10px;
+    padding: 30px 0px;
+    background: #97BFDC;
+    .table-bordered {
+        border: 2px solid #fff;
+        td {
+            text-align: center;
+        }
+        .quote-image {
+            text-align: center;
+            img.guote-logo {
+                width: 70%;
+            }
+        }
+    }
+    .vendor-text {
+        font-size: 25px;
+        color: #fff;
+    }
+}
+.quick-quote {
+    text-align: center;
+    color: #fff;
+    a {
+        color: #fff;
+        text-decoration: underline;
+    }
+}
+
+// news & product 
+section.news-product {
+    padding: 80px 0px;
+    background: #A8A8A8;
+    .all-news {
+        margin-top: 60px;
+    }
+    .news-heading {
+        font-size: 38px;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: 2px;
+    }
+    .news-artical {
+        padding: 0px 46px;
+        min-height: 106px;
+    }
+    h1.notes-heading {
+        font-size: 23px;
+        text-align: center;
+        color: #4B4A47;
+        font-weight: 700;
+    }
+    p.notes-text {
+        text-align: center;
+        color: #fff;
+    }
+    .news-image {
+        margin-top: 30px;
+        padding: 0px 20px;
+        .product-image{
+            width: 100%;
         }
     }
 }
-button.contact-button{
-    @include button-1;
+// story section
+
+section.our.story {
+    position: relative;
+    padding: 40px 0px 80px 0px;
+    background: #fff;
+    h1.story-heading {
+        font-size: 38px;
+        font-weight: 700;
+        color: #4B4A47;
+        margin-bottom: 30px;
+    }
+    .story-text {
+        color: #4b4a47;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 21px;
+    }
+    p.story-text-two{
+        color: #4b4a47;
+        font-size: 20px;
+        font-weight: 700;
+
+        span.diff-color {
+            color: #97BFDC;
+        }
+    }
+    .story-images{
+        position: relative;
+        img.owner-image {
+            width: 340px;
+            height: 340px;
+            border-radius: 100%;
+        }
+        .story-image-two {
+            position: absolute;
+            left: 60%;
+            bottom: 0;
+            right: 0;
+            transform: translateY(78%);
+        }
+        
+    }
 }
-.portfolio-heading {
-    margin: 0;
-    font-size: 55px;
-    line-height: 63px;
-    font-weight: bold;
+// style for contact sec
+
+.contact-wrapper{
+    position: relative;
+    .contact-image{
+        position: relative;
+        img{
+            width: 100%;
+        }
+    }
+    .contact-circule {
+        width: 500px;
+        height: 500px;
+        text-align: center;
+        background: #97BFDC;
+        border-radius: 50%;
+        position: absolute;
+        top: 21%;
+        left: 15%;
+        opacity: 0.8;
+        h1.circule-heading {
+            font-size: 21px;
+            color: #4b4a47;
+            font-weight: 700;
+        }
+        .circule-content {
+            padding: 60px 35px;
+        }
+        img.youtube {
+            width: 26%;
+            margin:35px 0px 0px 22px;
+        }
+        p.info {
+            font-size: 21px;
+            color: #fff;
+            font-weight: 500;
+            margin-bottom: 23px;
+        }
+        p.address {
+            font-size: 20px;
+            color: #fff;
+        }
+    }
+    
 }
-p.portfolio-text {
-    font-size: 20px;
-    line-height: 25px;
-    color: #bdb7b7;
-}
-button.quote{
-    @include button-2;
-    @include padding(10px,20px,10px,20px);
-}
-.review.text-center{
-    @include padding(60px,130px,40px,130px);
-}
-.details{
-    @include padding(119px,90px,100px,60px);
-}
-img.img-fluid.stara{
-    @include size(50%,null);
-}
+
+// style for contact-us
+
+
